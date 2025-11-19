@@ -1,21 +1,8 @@
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
 
   return (
     <div className="min-h-screen">
@@ -270,92 +257,46 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">Свяжитесь с нами</h2>
             <p className="text-xl text-muted-foreground">Ответим на все вопросы и рассчитаем стоимость</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Оставьте заявку</CardTitle>
-                <CardDescription>Перезвоним в течение 15 минут</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <Input 
-                      placeholder="Ваше имя" 
-                      value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Input 
-                      type="tel" 
-                      placeholder="Телефон" 
-                      value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Textarea 
-                      placeholder="Опишите ваш объект и требуемые работы" 
-                      value={formData.message}
-                      onChange={(e) => setFormData({...formData, message: e.target.value})}
-                      rows={4}
-                    />
-                  </div>
-                  <Button type="submit" className="w-full" size="lg">
-                    Отправить заявку
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-
-            <div className="space-y-6">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               <Card>
                 <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon name="Phone" className="text-primary" size={24} />
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon name="Phone" className="text-primary" size={28} />
                     </div>
-                    <div>
-                      <h3 className="font-semibold mb-2">Телефон</h3>
-                      <a href="tel:+79001234567" className="text-lg text-primary hover:underline">
-                        +7 (900) 123-45-67
-                      </a>
-                      <p className="text-sm text-muted-foreground mt-1">Работаем круглосуточно</p>
-                    </div>
+                    <h3 className="font-semibold mb-2">Телефон</h3>
+                    <a href="tel:+79001234567" className="text-lg text-primary hover:underline">
+                      +7 (900) 123-45-67
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-1">Работаем круглосуточно</p>
                   </div>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon name="Mail" className="text-primary" size={24} />
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon name="Mail" className="text-primary" size={28} />
                     </div>
-                    <div>
-                      <h3 className="font-semibold mb-2">Email</h3>
-                      <a href="mailto:info@spectehservis.ru" className="text-lg text-primary hover:underline">
-                        info@spectehservis.ru
-                      </a>
-                      <p className="text-sm text-muted-foreground mt-1">Ответим в течение часа</p>
-                    </div>
+                    <h3 className="font-semibold mb-2">Email</h3>
+                    <a href="mailto:info@spectehservis.ru" className="text-lg text-primary hover:underline">
+                      info@spectehservis.ru
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-1">Ответим в течение часа</p>
                   </div>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon name="MapPin" className="text-primary" size={24} />
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon name="MapPin" className="text-primary" size={28} />
                     </div>
-                    <div>
-                      <h3 className="font-semibold mb-2">Офис</h3>
-                      <p className="text-muted-foreground">г. Москва, ул. Строительная, 15</p>
-                      <p className="text-sm text-muted-foreground mt-1">Пн-Вс: 8:00 - 20:00</p>
-                    </div>
+                    <h3 className="font-semibold mb-2">Офис</h3>
+                    <p className="text-muted-foreground">г. Москва, ул. Строительная, 15</p>
+                    <p className="text-sm text-muted-foreground mt-1">Пн-Вс: 8:00 - 20:00</p>
                   </div>
                 </CardContent>
               </Card>
