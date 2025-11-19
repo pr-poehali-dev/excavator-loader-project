@@ -173,13 +173,13 @@ const Index = () => {
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-video overflow-hidden">
                 <img 
-                  src="https://cdn.poehali.dev/projects/bae71623-33e6-4983-9ab7-004d8f771e73/files/50de3383-7026-4153-885a-8d2cba3d489e.jpg" 
+                  src="https://cdn.poehali.dev/files/baa06a55-2498-4bda-ada1-428f7358dc79.png" 
                   alt="Самосвал" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-2xl">Самосвал КАМАЗ 6520</CardTitle>
+                <CardTitle className="text-2xl">Самосвал JAC N350</CardTitle>
                 <CardDescription className="text-base">Для вывоза грунта и доставки материалов</CardDescription>
               </CardHeader>
               <CardContent>
