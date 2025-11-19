@@ -258,49 +258,48 @@ const Index = () => {
             <p className="text-xl text-muted-foreground">Ответим на все вопросы и рассчитаем стоимость</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon name="Phone" className="text-primary" size={28} />
-                    </div>
-                    <h3 className="font-semibold mb-2">Телефон</h3>
-                    <a href="tel:+79001234567" className="text-lg text-primary hover:underline">
-                      +7 (900) 123-45-67
-                    </a>
-                    <p className="text-sm text-muted-foreground mt-1">Работаем круглосуточно</p>
+            <Card>
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name="Phone" className="text-primary" size={28} />
                   </div>
-                </CardContent>
-              </Card>
+                  <h3 className="font-semibold mb-2">Телефон</h3>
+                  <a href="tel:+79001234567" className="text-lg text-primary hover:underline">
+                    +7 (900) 123-45-67
+                  </a>
+                  <p className="text-sm text-muted-foreground mt-1">Работаем круглосуточно</p>
+                </div>
+              </CardContent>
+            </Card>
 
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon name="Mail" className="text-primary" size={28} />
-                    </div>
-                    <h3 className="font-semibold mb-2">Email</h3>
-                    <a href="mailto:info@spectehservis.ru" className="text-lg text-primary hover:underline">
-                      info@spectehservis.ru
-                    </a>
-                    <p className="text-sm text-muted-foreground mt-1">Ответим в течение часа</p>
+            <Card>
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name="Mail" className="text-primary" size={28} />
                   </div>
-                </CardContent>
-              </Card>
+                  <h3 className="font-semibold mb-2">Email</h3>
+                  <a href="mailto:info@spectehservis.ru" className="text-lg text-primary hover:underline">
+                    info@spectehservis.ru
+                  </a>
+                  <p className="text-sm text-muted-foreground mt-1">Ответим в течение часа</p>
+                </div>
+              </CardContent>
+            </Card>
 
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon name="MapPin" className="text-primary" size={28} />
-                    </div>
-                    <h3 className="font-semibold mb-2">Офис</h3>
-                    <p className="text-muted-foreground">г. Москва, ул. Строительная, 15</p>
-                    <p className="text-sm text-muted-foreground mt-1">Пн-Вс: 8:00 - 20:00</p>
+            <Card>
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name="MapPin" className="text-primary" size={28} />
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                  <h3 className="font-semibold mb-2">Офис</h3>
+                  <p className="text-muted-foreground">г. Москва, ул. Строительная, 15</p>
+                  <p className="text-sm text-muted-foreground mt-1">Пн-Вс: 8:00 - 20:00</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
