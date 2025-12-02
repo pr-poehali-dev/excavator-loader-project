@@ -117,7 +117,7 @@ const Index = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-2xl">Экскаватор-погрузчик Volvo BL71</CardTitle>
+                <CardTitle className="text-2xl">Экскаватор-погрузчик Volvo BL 61</CardTitle>
                 <CardDescription className="text-base">Универсальная машина для земляных работ</CardDescription>
               </CardHeader>
               <CardContent>
